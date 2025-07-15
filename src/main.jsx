@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import Layout from './components/Layout';
 import Dashboard from './Dashboard';
+import Author from './Author';
+import Dogs from './Dogs';
 
 import './index.css';
 
@@ -21,6 +23,16 @@ const router = createBrowserRouter(
         {
           index: true,
           element: <Dashboard />,
+        },
+        {
+          path: 'authors',
+          element: <Author />,
+          errorElement: <p> Error rendering page</p>,
+        },
+        {
+          path: 'dogs',
+          element: <Dogs />,
+          errorElement: <p> Error rendering page</p>,
         },
       ],
     },
