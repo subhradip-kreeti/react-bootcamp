@@ -1,0 +1,51 @@
+@reference "../../index.css";
+
+.main {
+  @apply flex w-full;
+}
+
+.content {
+  height: 100vh;
+  background-color: #f4f6f8;
+  overflow-x: hidden;
+}
+
+.collapsedContent {
+  width: calc(100% - 4rem);
+}
+
+.nonCollapsedContent {
+  width: calc(100% - 15rem);
+}
+
+.sideNavbarWrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  z-index: 55;
+}
+
+.navItems {
+  @apply flex flex-col flex-1 overflow-y-auto overflow-x-hidden py-2;
+}
+
+.navItems::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 100%;
+}
+
+.navItems::-webkit-scrollbar-thumb {
+  background-color: #718096;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.navItems::-webkit-scrollbar-thumb:hover {
+  background-color: #a0aec0;
+}
+
+.toggleIcon {
+  @apply text-cyan-700 text-xl absolute top-6 -right-3 cursor-pointer bg-[#f5f7fe] rounded-full hover:bg-[#4b91a4] hover:text-[#f5f7fe] border border-[#d1e2e8];
+}

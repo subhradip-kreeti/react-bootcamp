@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 import Layout from './components/Layout';
 import Dashboard from './Dashboard';
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
         },
       ],
     },
-  ],
+  ]
   // {
   //   basename: '/kreeti',
   // }
